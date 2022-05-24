@@ -48,7 +48,23 @@ var mouseEvent = "empty";
 
     }
 
-    /*Create an event listener for "mouseup"
+   
+
+function clearArea() {
+    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+}
+
+/*Uncomment the correct line*/
+//canvas.addEventListner("mousedown", my_mousedown);
+//canvas.addEventListner("mousedown", my_mousedown);
+//canvas.addEventListner("mousedown", my_mousedown);
+
+/*
+create current_position_of_mouse_y and
+assign it e.clienty - canvas.offsetTop;
+*/
+
+/*Create an event listener for "mouseup"
     and call function my_mouseup
 
     Create a function named my_mouseup with
@@ -67,7 +83,3 @@ var mouseEvent = "empty";
     Assign "mouseleave" to mouseEvent
     within the function
     */
-
-function clearArea() {
-    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-}
